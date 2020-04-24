@@ -1,4 +1,3 @@
-
 # Copyright (C) 2009 The Android Open Source Project
 # Copyright (c) 2011, The Linux Foundation. All rights reserved.
 # Copyright (C) 2017-2018 The LineageOS Project
@@ -61,3 +60,4 @@ def AddBasebandAssertion(info, input_zip):
       cmd = 'assert(xiaomi.verify_baseband(' + ','.join(['"%s"' % baseband for baseband in timestamps]) + ') == "1" || abort("ERROR: This package requires firmware from MIUI {1} or newer. Please upgrade firmware and retry!"););'
       info.script.AppendExtra(cmd.format(timestamps, firmware_version))
   return
+  
